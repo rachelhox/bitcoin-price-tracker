@@ -23,6 +23,15 @@
     "paths": {
       "@src/*": [
         "src/*"
+      ],
+      "@components": [
+        "src/components"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@icons": [
+        "src/components/icons"
       ]
     },
   },

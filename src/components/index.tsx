@@ -1,3 +1,4 @@
+import Layout from './layout';
 import IndividualBTCChart from './IndividualBTCChart';
 
-export { IndividualBTCChart };
+export { Layout, IndividualBTCChart };

@@ -4,6 +4,7 @@ import * as createPalette from '@mui/material/styles/createPalette';
 // create custom palette
 declare module '@mui/material/styles/createPalette' { 
     interface Custom {
+        yellow: string,
     }
     interface PaletteOptions {
         custom?: Custom;

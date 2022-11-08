@@ -15,5 +15,8 @@ export const defaultThemeOverride = {
     background: {
       default: backgroundDefault,
     },
+    custom: {
+      yellow: '#F4D933',
+    },
   },
 };
