@@ -45,12 +45,11 @@ const DesktopNavMenu = ({ link }: NavMenuProps) => {
             }}
           >
             <Link href={item.link} key={item.display}>
-              <a>{item.display}</a>
+              {item.display}
             </Link>
           </Box>
         );
       })}
-      <Box>{/* <LangMenuButton /> */}</Box>
     </Box>
   );
 };

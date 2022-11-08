@@ -80,16 +80,15 @@ const Nav = ({ navLink }: NavProps) => {
               },
             }}
           >
-            <Link href="/">
-              <a
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  height: '100%',
-                }}
-              >
-                <BitcoinLogo />
-              </a>
+            <Link
+              href="/"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                height: '100%',
+              }}
+            >
+              <BitcoinLogo />
             </Link>
           </Box>
 
