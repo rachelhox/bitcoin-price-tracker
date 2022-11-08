@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable array-callback-return */
 /* eslint-disable no-console */
-import { useState, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import useSWR from 'swr';
 
@@ -11,26 +11,20 @@ export const useIndividualChartkHook = () => {
   const [period, setPeriod] = useState(90);
   const fetcher = (url: string) => axios.get(url).then((res) => res.data);
   // eslint-disable-next-line no-unused-vars
-  const { data: chartData, error } = useSWR(
+  const { data: chartData, isValidating } = useSWR(
     `${process.env.NEXT_PUBLIC_COINGECKO_API_URL}/coins/bitcoin/ohlc?vs_currency=${currency}&days=${period}`,
-    fetcher
+    fetcher,
+    { refreshInterval: 60000 }
   );
-  //   console.log(
-  //     'query',
-  //     `${process.env.NEXT_PUBLIC_COINGECKO_API_URL}/coins/bitcoin/
-  //   ohlc?vs_currency=${currency}&days=${period}`
-  //   );
 
-  //   console.log(data, error);
-  useMemo(() => {
-    // console.log('hit');
+  useEffect(() => {
+    setCandleChartData([]);
     if (chartData) {
       chartData.map((candle: any) => {
         const dateObj = new Date(candle[0]);
         const day = dateObj.getDate();
         const month = dateObj.getMonth() + 1;
         const year = dateObj.getFullYear();
-        // console.log('candle', day, month, year);
         setCandleChartData((prev) => [
           ...prev,
           {
@@ -42,9 +36,8 @@ export const useIndividualChartkHook = () => {
           },
         ]);
       });
-      // setChartData(data);
     }
-    return candleChartData;
-  }, [chartData]);
-  return candleChartData;
+  }, [chartData, isValidating]);
+
+  return { currency, period, candleChartData };
 };

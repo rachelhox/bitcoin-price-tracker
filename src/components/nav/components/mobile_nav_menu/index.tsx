@@ -62,7 +62,7 @@ const MobileNavMenu = ({ link }: NavMenuProps) => {
             left: `${width - width / 4}px!important` as any,
             [theme.breakpoints.down('laptop')]: {
               width: '70%',
-              top: '80px!important' as any,
+              top: '100px!important' as any,
               left: `${width / 6}px!important` as any,
               backgroundColor: '#1D1E22',
               borderRadius: theme.spacing(2.25),

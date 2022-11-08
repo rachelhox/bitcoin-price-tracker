@@ -59,7 +59,7 @@ const Nav = ({ navLink }: NavProps) => {
         <Box
           sx={{
             background: 'transparent',
-            padding: theme.spacing(4, 3, 0, 3),
+            padding: theme.spacing(3, 3, 0, 3),
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
@@ -96,7 +96,7 @@ const Nav = ({ navLink }: NavProps) => {
             sx={{
               [theme.breakpoints.down('laptop')]: {
                 position: 'absolute',
-                top: theme.spacing(4),
+                top: theme.spacing(5),
                 right: theme.spacing(4),
               },
               [theme.breakpoints.up('laptop')]: {
