@@ -1,12 +1,9 @@
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Layout, IndividualBTCChart } from '@components';
-import { useWindowDimensions } from '@src/hooks';
 
 const Home = () => {
   const theme = useTheme();
-  const { windowDimensions, isDesktop } = useWindowDimensions();
-  const { width } = windowDimensions;
   return (
     <Layout navLink="/">
       <Box
