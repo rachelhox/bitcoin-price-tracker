@@ -1,46 +1,26 @@
 /* eslint-disable no-unused-vars */
-import {
-  Box,
-  Card,
-  Typography,
-  useTheme,
-  useMediaQuery,
-  CircularProgress,
-  IconButton,
-  Button,
-} from '@mui/material';
-import React from 'react';
-import {
-  VictoryChart,
-  VictoryAxis,
-  VictoryCandlestick,
-  VictoryTheme,
-} from 'victory';
+import { Box, Typography } from '@mui/material';
+import { TimePeriodButton } from '@components';
 import useStyles from './useStyles';
+import { CandleStickChart } from './components';
 import { useIndividualChartkHook } from './hooks';
 
 const IndividualBTCChart = () => {
   const styles = useStyles();
-  const theme = useTheme();
-  const onlyLargeScreen = useMediaQuery(theme.breakpoints.up('laptop'));
-  const candleChartData = useIndividualChartkHook();
-  //   console.log('data', candleChartData);
+  const { currency, period, setPeriod, candleChartData } =
+    useIndividualChartkHook();
 
   return (
     <Box css={styles.root}>
-      <Typography variant="h6">Please select currency</Typography>
-      <VictoryChart
-        theme={VictoryTheme.material}
-        domainPadding={{ x: 25 }}
-        scale={{ x: 'time' }}
-      >
-        <VictoryAxis tickFormat={(t) => `${t.getDate()}/${t.getMonth()}`} />
-        <VictoryAxis dependentAxis />
-        <VictoryCandlestick
-          candleColors={{ positive: '#5f5c5b', negative: '#c43a31' }}
-          data={candleChartData}
-        />
-      </VictoryChart>
+      <Box css={styles.maxWidth}>
+        <Box css={styles.container}>
+          <Typography variant="h3" css={styles.h1}>
+            {`BTC/${currency.key.toUpperCase()}`}
+          </Typography>
+          <TimePeriodButton period={period} setPeriod={setPeriod} />
+        </Box>
+        <CandleStickChart period={period} candleChartData={candleChartData} />
+      </Box>
     </Box>
   );
 };

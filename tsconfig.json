@@ -23,6 +23,21 @@
     "paths": {
       "@src/*": [
         "src/*"
+      ],
+      "@components": [
+        "src/components"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@icons": [
+        "src/components/icons"
+      ],
+      "@utils": [
+        "src/utils"
+      ],
+      "@contexts": [
+        "contexts"
       ]
     },
   },

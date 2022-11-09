@@ -8,3 +8,13 @@ interface OHLCProps {
   low: number;
   close: number;
 }
+
+interface Currency {
+  name: string;
+  key: string;
+  unit: string;
+  type: string;
+}
+interface CurrencyProps {
+  key: Currency;
+}

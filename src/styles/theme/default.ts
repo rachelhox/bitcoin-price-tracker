@@ -1,4 +1,4 @@
-const backgroundDefault = 'rgb(24, 26, 32)';
+const backgroundDefault = '#181A20';
 
 /** Custom theme overrides for default mode */
 export const defaultThemeOverride = {
@@ -14,6 +14,11 @@ export const defaultThemeOverride = {
     },
     background: {
       default: backgroundDefault,
+    },
+    custom: {
+      yellow: '#F4D933',
+      red: '#F64670',
+      green: '#0ECB81',
     },
   },
 };
