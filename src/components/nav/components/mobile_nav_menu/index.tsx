@@ -4,10 +4,14 @@ import Link from 'next/link';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { MenuIcon } from '@components/icons';
-import { useTheme } from '@mui/material';
+import { Collapse, ListItem, useTheme } from '@mui/material';
+import { useGeneralContext } from '@contexts';
 import { useWindowDimensions } from '@src/hooks';
 import { navItems } from '../config';
+import CurrencyMenuButton from '../currency_menu_button';
 
 interface NavMenuProps {
   link: string;
@@ -24,6 +28,11 @@ const MobileNavMenu = ({ link }: NavMenuProps) => {
   };
   const handleClose = () => {
     setAnchorEl(null);
+  };
+  const { currency } = useGeneralContext();
+  const [openDrawer, setOpenDrawer] = React.useState(false);
+  const handleDropdownClick = () => {
+    setOpenDrawer((prevState) => !prevState);
   };
   return (
     <div>
@@ -97,6 +106,29 @@ const MobileNavMenu = ({ link }: NavMenuProps) => {
             </Link>
           </MenuItem>
         ))}
+        <ListItem
+          onClick={handleDropdownClick}
+          sx={{
+            display: 'flex',
+            justifyContent: 'flex-start',
+            fontSize: theme.spacing(2),
+            fontWeight: 700,
+            color: theme.palette.common.white,
+            height: theme.spacing(5),
+            padding: theme.spacing(0, 3),
+            '> a': {
+              width: '100%',
+              textAlign: 'left',
+              textDecoration: 'none',
+            },
+          }}
+        >
+          {currency.name}
+          {openDrawer ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+        </ListItem>
+        <Collapse in={openDrawer} timeout="auto" unmountOnExit>
+          <CurrencyMenuButton />
+        </Collapse>
       </Menu>
     </div>
   );

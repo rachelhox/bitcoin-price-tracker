@@ -63,7 +63,6 @@ const currencies: IStringIndex = {
     name: 'Chinese Yuan',
     key: 'cny',
     unit: '¥',
-    value: 145792.104,
     type: 'fiat',
   },
   jpy: {

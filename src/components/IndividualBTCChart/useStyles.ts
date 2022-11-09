@@ -8,14 +8,12 @@ const useStyles = () => {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      // minHeight: '140vh',
       [theme.breakpoints.down('laptop')]: {
         minHeight: 'auto',
       },
       [theme.breakpoints.up('laptop')]: {
         height: '100vh',
         // minHeight: '100vh',
-        // marginBottom: '250px',
       },
     }),
     maxWidth: css({

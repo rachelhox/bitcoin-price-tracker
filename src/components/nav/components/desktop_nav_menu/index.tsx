@@ -3,6 +3,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import { Box, useTheme } from '@mui/material';
 import { navItems } from '../config';
+import CurrencyMenuButton from '../currency_menu_button';
 
 interface NavMenuProps {
   link: string;
@@ -50,6 +51,9 @@ const DesktopNavMenu = ({ link }: NavMenuProps) => {
           </Box>
         );
       })}
+      <Box>
+        <CurrencyMenuButton />
+      </Box>
     </Box>
   );
 };

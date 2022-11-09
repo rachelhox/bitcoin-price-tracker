@@ -4,15 +4,16 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import useSWR from 'swr';
+import { useGeneralContext } from '@contexts';
 
 export const useIndividualChartkHook = () => {
-  const [currency, setCurrency] = useState('usd');
+  const { currency } = useGeneralContext();
   const [candleChartData, setCandleChartData] = useState<Array<OHLCProps>>([]);
   const [period, setPeriod] = useState(90);
   const fetcher = (url: string) => axios.get(url).then((res) => res.data);
   // eslint-disable-next-line no-unused-vars
   const { data: chartData, isValidating } = useSWR(
-    `${process.env.NEXT_PUBLIC_COINGECKO_API_URL}/coins/bitcoin/ohlc?vs_currency=${currency}&days=${period}`,
+    `${process.env.NEXT_PUBLIC_COINGECKO_API_URL}/coins/bitcoin/ohlc?vs_currency=${currency.key}&days=${period}`,
     fetcher,
     { refreshInterval: 60000 }
   );
@@ -37,7 +38,7 @@ export const useIndividualChartkHook = () => {
         ]);
       });
     }
-  }, [chartData, isValidating]);
+  }, [chartData, isValidating, currency]);
 
   return { currency, period, candleChartData };
 };

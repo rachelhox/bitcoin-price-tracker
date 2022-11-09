@@ -1,0 +1,15 @@
+export const currencyKeys = [
+  'usd',
+  'aed',
+  'eur',
+  'aud',
+  'cad',
+  'chf',
+  'gbp',
+  'hkd',
+  'sgd',
+  'cny',
+  'jpy',
+  'inr',
+  'krw',
+].sort();

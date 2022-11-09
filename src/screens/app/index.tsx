@@ -2,6 +2,7 @@ import * as React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import { CacheProvider, EmotionCache } from '@emotion/react';
+import { GeneralProvider } from '@contexts';
 import createEmotionCache from '../../misc/createEmotionCache';
 import InnerApp from './innerApp';
 
@@ -21,7 +22,9 @@ export default function MyApp(props: MyAppProps) {
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
-      <InnerApp pageProps={pageProps} Component={Component} />
+      <GeneralProvider>
+        <InnerApp pageProps={pageProps} Component={Component} />
+      </GeneralProvider>
     </CacheProvider>
   );
 }

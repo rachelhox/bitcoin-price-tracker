@@ -1,15 +1,12 @@
 /* eslint-disable no-unused-vars */
-import { Box, Typography, useTheme } from '@mui/material';
-import React from 'react';
+import { Box, Typography } from '@mui/material';
 import useStyles from './useStyles';
 import { CandleStickChart } from './components';
 import { useIndividualChartkHook } from './hooks';
 
 const IndividualBTCChart = () => {
   const styles = useStyles();
-  const theme = useTheme();
-  const { currency, period, candleChartData } = useIndividualChartkHook();
-  // console.log('data', candleChartData);
+  const { candleChartData } = useIndividualChartkHook();
 
   return (
     <Box css={styles.root}>

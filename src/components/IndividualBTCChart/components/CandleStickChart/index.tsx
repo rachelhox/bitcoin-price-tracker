@@ -8,6 +8,8 @@ import {
   VictoryZoomContainer,
   VictoryTooltip,
 } from 'victory';
+import { useGeneralContext } from '@contexts';
+import { convertToMoney } from '@utils';
 import useStyles from './useStyles';
 
 interface CandleStickChartProp {
@@ -18,16 +20,21 @@ interface CandleStickChartProp {
 const CandleStickChart = ({ candleChartData }: CandleStickChartProp) => {
   const styles = useStyles();
   const theme = useTheme();
+  const { currency } = useGeneralContext();
   return (
     <Box css={styles.root}>
       <VictoryChart
         theme={VictoryTheme.material}
-        domainPadding={{ x: 25 }}
+        domainPadding={{ x: 10 }}
+        padding={{ left: 60, top: 10, right: 0, bottom: 30 }}
         scale={{ x: 'time' }}
         containerComponent={<VictoryZoomContainer />}
       >
         <VictoryAxis tickFormat={(t) => `${t.getDate()}/${t.getMonth()}`} />
-        <VictoryAxis dependentAxis />
+        <VictoryAxis
+          dependentAxis
+          tickFormat={(t) => [`${currency.unit}${convertToMoney(t)}`]}
+        />
         <VictoryCandlestick
           candleColors={{
             positive: theme.palette.custom.green,
@@ -37,10 +44,10 @@ const CandleStickChart = ({ candleChartData }: CandleStickChartProp) => {
           data={candleChartData}
           labels={({ datum }: any) => [
             `date: ${datum.x.getDate()}/${datum.x.getMonth()}`,
-            `open: $${datum.open}`,
-            `high: $${datum.high}`,
-            `low: $${datum.low}`,
-            `close: $${datum.close}`,
+            `open: ${currency.unit}${convertToMoney(datum.open)}`,
+            `high: ${currency.unit}${convertToMoney(datum.high)}`,
+            `low: ${currency.unit}${convertToMoney(datum.low)}`,
+            `close: ${currency.unit}${convertToMoney(datum.close)}`,
           ]}
           labelComponent={
             <VictoryTooltip
