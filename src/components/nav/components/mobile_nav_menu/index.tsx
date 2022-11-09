@@ -115,7 +115,7 @@ const MobileNavMenu = ({ link }: NavMenuProps) => {
             fontWeight: 700,
             color: theme.palette.common.white,
             height: theme.spacing(5),
-            padding: theme.spacing(0, 3),
+            padding: theme.spacing(3, 3, 4, 3),
             '> a': {
               width: '100%',
               textAlign: 'left',

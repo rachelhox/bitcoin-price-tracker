@@ -30,7 +30,6 @@ const CurrencyMenuButton: React.FC = () => {
     [setCurrencyAnchor]
   );
   const onItemClick = React.useCallback(
-    // eslint-disable-next-line no-undef
     (c: any) => {
       const currencyState = getCurrencyInfo(c.key);
       setCurrency(currencyState);
@@ -85,14 +84,6 @@ const CurrencyMenuButton: React.FC = () => {
                 top: `${theme.spacing(9)} !important` as any,
                 right: `${width - width / 4}px!important` as any,
                 backgroundColor: '#1D1E22',
-                // [theme.breakpoints.down('laptop')]: {
-                //   width: '70%',
-                //   top: '75% !important' as any,
-                //   bottom: '20px!important' as any,
-                //   left: `${width / 6}px!important` as any,
-                //   borderRadius: theme.spacing(2.25),
-                //   color: theme.palette.common.white,
-                // },
               },
             }}
           >

@@ -20,7 +20,7 @@ export const useIndividualChartkHook = () => {
 
   useEffect(() => {
     setCandleChartData([]);
-    if (chartData) {
+    if (chartData && period === 90) {
       chartData.map((candle: any) => {
         const dateObj = new Date(candle[0]);
         const day = dateObj.getDate();
@@ -37,8 +37,27 @@ export const useIndividualChartkHook = () => {
           },
         ]);
       });
+    } else if (chartData) {
+      chartData.map((candle: any) => {
+        const dateObj = new Date(candle[0]);
+        const day = dateObj.getDate();
+        const month = dateObj.getMonth() + 1;
+        const year = dateObj.getFullYear();
+        const hour = dateObj.getHours();
+        const minute = dateObj.getMinutes();
+        setCandleChartData((prev) => [
+          ...prev,
+          {
+            x: new Date(year, month, day, hour, minute),
+            open: candle[1],
+            high: candle[2],
+            low: candle[3],
+            close: candle[4],
+          },
+        ]);
+      });
     }
-  }, [chartData, isValidating, currency]);
+  }, [chartData, isValidating, currency, period]);
 
-  return { currency, period, candleChartData };
+  return { currency, period, setPeriod, candleChartData };
 };
