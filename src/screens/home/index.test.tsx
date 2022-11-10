@@ -7,10 +7,8 @@ import Home from '.';
 // mocks
 // ==================================
 jest.mock('@components', () => ({
-  Layout: (props: any) => <div id="Layout" {...props} />,
-  IndividualBTCChart: (props: any) => (
-    <div id="IndividualBTCChart" {...props} />
-  ),
+  Layout: (props: { navLink: string }) => <div id="Layout" {...props} />,
+  IndividualBTCChart: () => <div id="IndividualBTCChart" />,
 }));
 
 // ==================================

@@ -36,6 +36,9 @@
       "@utils": [
         "src/utils"
       ],
+      "@styles": [
+        "src/styles"
+      ],
       "@contexts": [
         "contexts"
       ],
