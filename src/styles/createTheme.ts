@@ -7,6 +7,7 @@ declare module '@mui/material/styles/createPalette' {
         yellow: string,
         red: string,
         green: string,
+        gray: string,
     }
     interface PaletteOptions {
         custom?: Custom;

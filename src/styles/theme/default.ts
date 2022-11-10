@@ -19,6 +19,7 @@ export const defaultThemeOverride = {
       yellow: '#F4D933',
       red: '#F64670',
       green: '#0ECB81',
+      gray: '#76808F',
     },
   },
 };
