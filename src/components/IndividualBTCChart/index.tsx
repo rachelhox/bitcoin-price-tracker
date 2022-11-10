@@ -14,7 +14,7 @@ const IndividualBTCChart = () => {
     <Box css={styles.root}>
       <Box css={styles.maxWidth}>
         <Box css={styles.container}>
-          <Typography variant="h3" css={styles.h1}>
+          <Typography variant="h1" css={styles.h1}>
             {`BTC/${currency.key.toUpperCase()}`}
           </Typography>
           <TimePeriodButton period={period} setPeriod={setPeriod} />

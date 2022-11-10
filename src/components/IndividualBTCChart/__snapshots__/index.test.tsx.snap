@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component: IndividualBTCChart matches snapshot 1`] = `
+<div
+  className="MuiBox-root css-g1za54-IndividualBTCChart"
+>
+  <div
+    className="MuiBox-root css-1bxp50g-IndividualBTCChart"
+  >
+    <div
+      className="MuiBox-root css-1cj9h77-IndividualBTCChart"
+    >
+      <h1
+        className="MuiTypography-root MuiTypography-h1 css-1yswwri-MuiTypography-root-IndividualBTCChart"
+      >
+        BTC/USD
+      </h1>
+      <div
+        id="TimePeriodButton"
+        period={90}
+        setPeriod={[Function]}
+      />
+    </div>
+    <div
+      candleChartData={[]}
+      id="CandleStickChart"
+      period={90}
+    />
+  </div>
+</div>
+`;

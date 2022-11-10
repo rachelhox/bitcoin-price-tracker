@@ -36,10 +36,16 @@
       "@utils": [
         "src/utils"
       ],
+      "@styles": [
+        "src/styles"
+      ],
       "@contexts": [
         "contexts"
+      ],
+      "@tests/*": [
+        "tests/*"
       ]
-    },
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
