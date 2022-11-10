@@ -12,9 +12,7 @@ let component: renderer.ReactTestRenderer;
 // mocks
 // ==================================
 jest.mock('..', () => ({
-  CurrencyMenuButton: (props: any) => (
-    <div id="currencyMenuButton" {...props} />
-  ),
+  CurrencyMenuButton: () => <div id="currencyMenuButton" />,
 }));
 
 // ==================================

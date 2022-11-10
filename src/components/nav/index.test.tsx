@@ -1,7 +1,9 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable react/jsx-curly-brace-presence */
 import renderer from 'react-test-renderer';
 import { MockTheme, wait } from '@tests/utils';
-import DesktopNavMenu from '.';
+import Nav from '.';
 
 // ==================================
 // global setup
@@ -11,18 +13,23 @@ let component: renderer.ReactTestRenderer;
 // ==================================
 // mocks
 // ==================================
-jest.mock('..', () => ({
-  CurrencyMenuButton: () => <div id="currencyMenuButton" />,
+jest.mock('./components', () => ({
+  DesktopNavMenu: (props: { link: string }) => (
+    <div id="desktopNavMenu" {...props} />
+  ),
+  MobileNavMenu: (props: { link: string }) => (
+    <div id="mobileNavMenu" {...props} />
+  ),
 }));
 
 // ==================================
 // unit tests
 // ==================================
-describe('screen: Nav/Desktop Nav Menu', () => {
+describe('screen: Nav/Mobile Nav Menu', () => {
   beforeEach(async () => {
     component = renderer.create(
       <MockTheme>
-        <DesktopNavMenu link="/" />
+        <Nav navLink="/" />
       </MockTheme>
     );
     await wait();
