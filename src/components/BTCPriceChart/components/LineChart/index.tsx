@@ -16,12 +16,11 @@ import useStyles from './useStyles';
 interface LineChartProp {
   // eslint-disable-next-line no-undef
   lineChartData: PriceProps[];
-  period: number;
 }
 
 const VictoryZoomVoronoiContainer: any = createContainer('zoom', 'voronoi');
 
-const LineChart = ({ lineChartData, period }: LineChartProp) => {
+const LineChart = ({ lineChartData }: LineChartProp) => {
   const styles = useStyles();
   const theme = useTheme();
   const { currency } = useGeneralContext();

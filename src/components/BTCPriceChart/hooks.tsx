@@ -6,7 +6,7 @@ import axios from 'axios';
 import useSWR from 'swr';
 import { useGeneralContext } from '@contexts';
 
-export const useLineChartkHook = () => {
+export const useLineChartHook = () => {
   const { currency } = useGeneralContext();
   const [lineChartData, setLineChartData] = useState<Array<PriceProps>>([]);
   const [period, setPeriod] = useState(30);

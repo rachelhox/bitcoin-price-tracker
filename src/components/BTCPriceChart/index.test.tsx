@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
 import { MockTheme } from '@tests/utils';
-import IndividualBTCChart from '.';
+import BTCPriceChart from '.';
 
 // ==================================
 // mocks
@@ -11,17 +11,17 @@ jest.mock('@components', () => ({
 }));
 
 jest.mock('./components', () => ({
-  CandleStickChart: (props: any) => <div id="CandleStickChart" {...props} />,
+  LineChart: (props: any) => <div id="LineChart" {...props} />,
 }));
 
 // ==================================
 // unit tests
 // ==================================
-describe('component: IndividualBTCChart', () => {
+describe('component: BTCPriceChart', () => {
   it('matches snapshot', () => {
     const component = renderer.create(
       <MockTheme>
-        <IndividualBTCChart />
+        <BTCPriceChart />
       </MockTheme>
     );
     const tree = component.toJSON();

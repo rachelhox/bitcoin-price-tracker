@@ -3,12 +3,12 @@ import { Box, Typography } from '@mui/material';
 import { TimePeriodButton } from '@components';
 import useStyles from './useStyles';
 import { LineChart } from './components';
-import { useLineChartkHook } from './hooks';
+import { useLineChartHook } from './hooks';
 import { customPeriodKeys } from './config';
 
 const BTCPriceChart = () => {
   const styles = useStyles();
-  const { currency, period, setPeriod, lineChartData } = useLineChartkHook();
+  const { currency, period, setPeriod, lineChartData } = useLineChartHook();
 
   return (
     <Box css={styles.root}>
@@ -23,7 +23,7 @@ const BTCPriceChart = () => {
             customPeriod={customPeriodKeys}
           />
         </Box>
-        <LineChart period={period} lineChartData={lineChartData} />
+        <LineChart lineChartData={lineChartData} />
       </Box>
     </Box>
   );
