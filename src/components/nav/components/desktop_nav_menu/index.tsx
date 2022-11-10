@@ -3,7 +3,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import { Box, useTheme } from '@mui/material';
 import { navItems } from '../config';
-import CurrencyMenuButton from '../currency_menu_button';
+import { CurrencyMenuButton } from '..';
 
 interface NavMenuProps {
   link: string;

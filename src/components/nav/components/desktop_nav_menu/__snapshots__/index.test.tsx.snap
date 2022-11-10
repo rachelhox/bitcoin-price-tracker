@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`screen: Nav/Desktop Nav Menu it renders 1`] = `
+<div
+  className="MuiBox-root css-kepopu"
+>
+  <div
+    className="MuiBox-root css-1d8o6bk"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      Price History
+    </a>
+  </div>
+  <div
+    className="MuiBox-root css-vh755k"
+  >
+    <a
+      href="/average-price"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      Average Price
+    </a>
+  </div>
+  <div
+    className="MuiBox-root css-vh755k"
+  >
+    <a
+      href="/latest-price"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      Latest Price
+    </a>
+  </div>
+  <div
+    className="MuiBox-root css-0"
+  >
+    <div
+      id="currencyMenuButton"
+    />
+  </div>
+</div>
+`;

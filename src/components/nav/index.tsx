@@ -91,7 +91,6 @@ const Nav = ({ navLink }: NavProps) => {
               <BitcoinLogo />
             </Link>
           </Box>
-
           <Box
             sx={{
               [theme.breakpoints.down('laptop')]: {
