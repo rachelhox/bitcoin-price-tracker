@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`screen: Nav/Mobile Nav Menu it renders 1`] = `
+<div>
+  <button
+    aria-haspopup="true"
+    aria-label="more"
+    className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-penbf1-MuiButtonBase-root-MuiIconButton-root"
+    disabled={false}
+    id="long-button"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onContextMenu={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <svg
+      fill="none"
+      height="18"
+      viewBox="0 0 24 18"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1 9L23 9M1 1L23 1M1 17L23 17"
+        stroke="#FFFFFF"
+        strokeLinecap="round"
+        strokeWidth="2"
+      />
+    </svg>
+    <span
+      className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+    />
+  </button>
+</div>
+`;
