@@ -9,6 +9,11 @@ interface OHLCProps {
   close: number;
 }
 
+interface PriceProps {
+  x: Date;
+  y: number;
+}
+
 interface Currency {
   name: string;
   key: string;

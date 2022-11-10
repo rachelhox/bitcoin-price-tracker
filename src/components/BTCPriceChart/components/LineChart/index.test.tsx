@@ -1,27 +1,26 @@
 import renderer from 'react-test-renderer';
 import { MockTheme } from '@tests/utils';
-import IndividualBTCChart from '.';
+import LineChart from '.';
 
 // ==================================
 // mocks
 // ==================================
+const mockLineChartData = [
+  { x: new Date(1660291413194), y: 137359.8917588185 },
+];
 
 jest.mock('@components', () => ({
-  TimePeriodButton: (props: any) => <div id="TimePeriodButton" {...props} />,
-}));
-
-jest.mock('./components', () => ({
-  CandleStickChart: (props: any) => <div id="CandleStickChart" {...props} />,
+  NoSSR: (props: any) => <div id="NoSSR" {...props} />,
 }));
 
 // ==================================
 // unit tests
 // ==================================
-describe('component: IndividualBTCChart', () => {
+describe('component: LineChart', () => {
   it('matches snapshot', () => {
     const component = renderer.create(
       <MockTheme>
-        <IndividualBTCChart />
+        <LineChart lineChartData={mockLineChartData} />
       </MockTheme>
     );
     const tree = component.toJSON();

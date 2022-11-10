@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component: BTCPriceChart matches snapshot 1`] = `
+<div
+  className="MuiBox-root css-t16hmq-BTCPriceChart"
+>
+  <div
+    className="MuiBox-root css-4yzvp0-BTCPriceChart"
+  >
+    <div
+      className="MuiBox-root css-7dv8nf-BTCPriceChart"
+    >
+      <h1
+        className="MuiTypography-root MuiTypography-h1 css-ahnsnm-MuiTypography-root-BTCPriceChart"
+      >
+        BTC/USD
+      </h1>
+      <div
+        customPeriod={
+          [
+            30,
+            7,
+            1,
+          ]
+        }
+        id="TimePeriodButton"
+        period={30}
+        setPeriod={[Function]}
+      />
+    </div>
+    <div
+      id="LineChart"
+      lineChartData={[]}
+    />
+  </div>
+</div>
+`;
