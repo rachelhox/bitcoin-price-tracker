@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`screen: Nav/Desktop Nav Menu it renders 1`] = `
+<div
+  className="MuiList-root css-1mk9mw3-MuiList-root"
+>
+  <div>
+    <a
+      className="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1mgvuz7-MuiButtonBase-root-MuiMenuItem-root"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="menuitem"
+      tabIndex={-1}
+    >
+      United Arab Emirates Dirham
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      className="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1mgvuz7-MuiButtonBase-root-MuiMenuItem-root"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="menuitem"
+      tabIndex={-1}
+    >
+      Australian Dollar
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      className="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1mgvuz7-MuiButtonBase-root-MuiMenuItem-root"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="menuitem"
+      tabIndex={-1}
+    >
+      Canadian Dollar
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      className="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1mgvuz7-MuiButtonBase-root-MuiMenuItem-root"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="menuitem"
+      tabIndex={-1}
+    >
+      Swiss Franc
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      className="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1mgvuz7-MuiButtonBase-root-MuiMenuItem-root"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="menuitem"
+      tabIndex={-1}
+    >
+      Chinese Yuan
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      className="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1mgvuz7-MuiButtonBase-root-MuiMenuItem-root"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="menuitem"
+      tabIndex={-1}
+    >
+      Euro
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      className="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1mgvuz7-MuiButtonBase-root-MuiMenuItem-root"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="menuitem"
+      tabIndex={-1}
+    >
+      British Pound Sterling
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      className="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1mgvuz7-MuiButtonBase-root-MuiMenuItem-root"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="menuitem"
+      tabIndex={-1}
+    >
+      Hong Kong Dollar
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      className="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1mgvuz7-MuiButtonBase-root-MuiMenuItem-root"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="menuitem"
+      tabIndex={-1}
+    >
+      Indian Rupee
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      className="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1mgvuz7-MuiButtonBase-root-MuiMenuItem-root"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="menuitem"
+      tabIndex={-1}
+    >
+      Japanese Yen
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      className="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1mgvuz7-MuiButtonBase-root-MuiMenuItem-root"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="menuitem"
+      tabIndex={-1}
+    >
+      South Korean Won
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      className="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1mgvuz7-MuiButtonBase-root-MuiMenuItem-root"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="menuitem"
+      tabIndex={-1}
+    >
+      Singapore Dollar
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+</div>
+`;
