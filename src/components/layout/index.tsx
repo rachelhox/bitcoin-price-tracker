@@ -90,12 +90,6 @@ const Layout = ({
         <link
           rel="icon"
           type="image/png"
-          sizes="96x96"
-          href={`${url}/icons/favicon-96x96.png`}
-        />
-        <link
-          rel="icon"
-          type="image/png"
           sizes="32x32"
           href={`${url}/icons/favicon-32x32.png`}
         />
@@ -105,7 +99,7 @@ const Layout = ({
           sizes="16x16"
           href={`${url}/icons/favicon-16x16.png`}
         />
-        <link rel="manifest" href={`${url}/icons/manifest.json`} />
+        <link rel="manifest" href={`${url}/icons/site.webmanifest`} />
       </Head>
       <Box
         sx={{
