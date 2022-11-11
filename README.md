@@ -15,11 +15,11 @@ A web app displaying bitcoin exchange rates for multiple currencies, currently s
 
 A candle stick chart displaying Bitcoin's OHLC (open, high, low, close) prices corresponding to the **selected currency** in a **given time period** (90d, 7d, 1d).
 
-| time period | candle stick  |
-| ----------- | ------------- |
-| 90 days     | 4-day OHLC    |
-| 7 days      | 4-hour OHLC   |
-| 1 day       | 30-minut OHLC |
+| time period | candle stick   |
+| ----------- | -------------- |
+| 90 days     | 4-day OHLC     |
+| 7 days      | 4-hour OHLC    |
+| 1 day       | 30-minute OHLC |
 
 ### Feature
 
