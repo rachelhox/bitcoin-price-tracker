@@ -55,7 +55,7 @@ const LineChart = ({ lineChartData }: LineChartProp) => {
                   }}
                 />
               }
-              allowZoom={!!onlyLargeScreen}
+              allowPan={!!onlyLargeScreen}
             />
           }
         >
