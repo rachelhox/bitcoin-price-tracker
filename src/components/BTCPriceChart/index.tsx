@@ -36,7 +36,7 @@ const BTCPriceChart = () => {
               </Tooltip>
             ) : (
               <Typography variant="h3" css={styles.h3}>
-                *Drag and zoom in on the chart and tap to see each data point
+                *Tap to see each data point on the chart
               </Typography>
             )}
           </Box>
