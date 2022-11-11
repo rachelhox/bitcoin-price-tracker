@@ -39,7 +39,7 @@ const useStyles = () => {
     }),
     h3: css({
       fontSize: theme.spacing(1.5),
-      color: theme.palette.custom.gray,
+      color: theme.palette.common.white,
       width: '100%',
       textAlign: 'left',
       [theme.breakpoints.up('laptop')]: {

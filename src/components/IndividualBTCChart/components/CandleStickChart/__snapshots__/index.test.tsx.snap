@@ -5,7 +5,7 @@ exports[`component: IndividualBTCChart matches snapshot 1`] = `
   id="NoSSR"
 >
   <div
-    className="MuiBox-root css-jtz3ax-CandleStickChart"
+    className="MuiBox-root css-1graeyb-CandleStickChart"
   >
     <div
       className="VictoryContainer"
