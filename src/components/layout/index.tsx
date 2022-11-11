@@ -23,7 +23,7 @@ const Layout = ({
   navLink,
   children,
   title = 'Bitcoin Price Tracker',
-  description = 'A web app displaying bitcoin exchangerates for multiple currencies',
+  description = 'A web app displaying bitcoin exchange rates for multiple currencies',
   keywords = [],
   type = 'website',
   image,

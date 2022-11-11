@@ -21,7 +21,7 @@ exports[`component: BTCPriceChart matches snapshot 1`] = `
         <h3
           className="MuiTypography-root MuiTypography-h3 css-1hszivs-MuiTypography-root-BTCPriceChart"
         >
-          *Drag and zoom in on the chart and tap to see each data point
+          *Tap to see each data point on the chart
         </h3>
       </div>
       <div
