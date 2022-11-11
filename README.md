@@ -1,34 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div style="
+  padding: 1rem 0;
+">
+<p align="center">
+  <img src="./public/icons/favicon-32x32.png" style="
+    width: 32px
+  "/>
+</p>
 
-## Getting Started
+# Bitcoin Price Tracker
 
-First, run the development server:
+A web app displaying bitcoin exchange rates for multiple currencies, currently supporting 13 currencies.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Price History
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A candle stick chart displaying Bitcoin's OHLC (open, high, low, close) prices corresponding to the **selected currency** in a **given time period** (90d, 7d, 1d).
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+| time period | candle stick  |
+| ----------- | ------------- |
+| 90 days     | 4-day OHLC    |
+| 7 days      | 4-hour OHLC   |
+| 1 day       | 30-minut OHLC |
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Feature
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+**Drag and zoom** function available for users to zoom in on the chart and inspect each data point by hovering over the candle stick.
 
-## Learn More
+<p align="center">
+<img src="https://media.giphy.com/media/9EYCxE7mu94RYmIN2P/giphy.gif" width="550" />
+</p>
 
-To learn more about Next.js, take a look at the following resources:
+## Average Price
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A line chart displaying Bitcoin's average prices corresponding to the **selected currency** in a **given time period** (30d, 7d, 1d).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| time period | data interval   |
+| ----------- | --------------- |
+| 30 days     | hourly          |
+| 7 days      | hourly          |
+| 1 day       | every 5 minutes |
 
-## Deploy on Vercel
+### Feature
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Drag and zoom** function available for users to zoom in on the chart and inspect each data point by hovering over the line.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center">
+<img src="https://media.giphy.com/media/kymn8ohMCsPsAtRfOc/giphy.gif" width="550" />
+</p>
+
+## Latest Price
+
+Displaying the latest Bitcoin prices for all 13 currencies
+
+### Note on development
+
+Once you zoom in on the chart, then switch to a different time period or a different currency, please drag and zoom out the chart again so you can view the whole chart with an updated x/y axis.
+
+All data is real time, updated every 1 minute.
+
+### Main tech stacks
+
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Material UI v5](https://mui.com/)
+- [Victory Chart](https://formidable.com/open-source/victory/)
+- [Jest](https://jestjs.io/docs/getting-started)
+
+## Author
+
+- Rachel Ho
