@@ -36,7 +36,7 @@ const CandleStickChart = ({
           padding={{ left: 90, top: 10, right: 0, bottom: 30 }}
           scale={{ x: 'time' }}
           containerComponent={
-            <VictoryZoomContainer allowPan={!!onlyLargeScreen} />
+            <VictoryZoomContainer disable={!onlyLargeScreen} />
           }
         >
           <VictoryAxis tickFormat={(t) => `${t.getDate()}/${t.getMonth()}`} />
