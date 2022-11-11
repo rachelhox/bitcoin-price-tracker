@@ -23,3 +23,7 @@ interface Currency {
 interface CurrencyProps {
   key: Currency;
 }
+
+interface CurrencyValueProp extends Currency {
+  value: number;
+}

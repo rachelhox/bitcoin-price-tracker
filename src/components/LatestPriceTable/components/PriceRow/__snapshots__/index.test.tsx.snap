@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component: PriceRow matches snapshot 1`] = `
+[
+  <div
+    className="MuiBox-root css-dqueu"
+  >
+    <h6
+      className="MuiTypography-root MuiTypography-h6 css-1dgyoj8-MuiTypography-root"
+    >
+      BTC/
+      AED
+    </h6>
+    <div
+      className="MuiBox-root css-6lnlif"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1 css-detvd-MuiTypography-root"
+      >
+        63,891
+      </p>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle1 css-zigcs7-MuiTypography-root"
+      >
+        DH 63,891
+      </h6>
+    </div>
+  </div>,
+  <div
+    className="MuiBox-root css-dqueu"
+  >
+    <h6
+      className="MuiTypography-root MuiTypography-h6 css-1dgyoj8-MuiTypography-root"
+    >
+      BTC/
+      USD
+    </h6>
+    <div
+      className="MuiBox-root css-6lnlif"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1 css-detvd-MuiTypography-root"
+      >
+        17,395
+      </p>
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle1 css-zigcs7-MuiTypography-root"
+      >
+        $ 17,395
+      </h6>
+    </div>
+  </div>,
+]
+`;

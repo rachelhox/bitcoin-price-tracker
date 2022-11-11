@@ -5,7 +5,7 @@ exports[`component: LineChart matches snapshot 1`] = `
   id="NoSSR"
 >
   <div
-    className="MuiBox-root css-m1odnm-LineChart"
+    className="MuiBox-root css-p1qljd-LineChart"
   >
     <div
       className="VictoryContainer"

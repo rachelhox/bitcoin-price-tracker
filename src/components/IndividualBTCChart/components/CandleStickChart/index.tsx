@@ -93,6 +93,15 @@ const CandleStickChart = ({
                 }}
               />
             }
+            style={{
+              data: {
+                strokeWidth: 2,
+                stroke: (d: any) =>
+                  d.close > d.open
+                    ? theme.palette.custom.red
+                    : theme.palette.custom.green,
+              },
+            }}
           />
         </VictoryChart>
       </Box>

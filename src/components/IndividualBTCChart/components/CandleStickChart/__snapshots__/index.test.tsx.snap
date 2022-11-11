@@ -5,7 +5,7 @@ exports[`component: IndividualBTCChart matches snapshot 1`] = `
   id="NoSSR"
 >
   <div
-    className="MuiBox-root css-jtz3ax-CandleStickChart"
+    className="MuiBox-root css-1graeyb-CandleStickChart"
   >
     <div
       className="VictoryContainer"
@@ -813,7 +813,8 @@ exports[`component: IndividualBTCChart matches snapshot 1`] = `
               style={
                 {
                   "fill": "#0ECB81",
-                  "stroke": "#455A64",
+                  "stroke": "#0ECB81",
+                  "strokeWidth": 2,
                 }
               }
               vectorEffect="non-scaling-stroke"
@@ -833,8 +834,8 @@ exports[`component: IndividualBTCChart matches snapshot 1`] = `
               style={
                 {
                   "fill": "#0ECB81",
-                  "stroke": "#455A64",
-                  "strokeWidth": undefined,
+                  "stroke": "#0ECB81",
+                  "strokeWidth": 2,
                 }
               }
               vectorEffect="non-scaling-stroke"
@@ -855,8 +856,8 @@ exports[`component: IndividualBTCChart matches snapshot 1`] = `
               style={
                 {
                   "fill": "#0ECB81",
-                  "stroke": "#455A64",
-                  "strokeWidth": undefined,
+                  "stroke": "#0ECB81",
+                  "strokeWidth": 2,
                 }
               }
               vectorEffect="non-scaling-stroke"

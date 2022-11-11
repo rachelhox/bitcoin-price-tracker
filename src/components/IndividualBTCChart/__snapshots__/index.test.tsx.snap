@@ -10,11 +10,20 @@ exports[`component: IndividualBTCChart matches snapshot 1`] = `
     <div
       className="MuiBox-root css-1cj9h77-IndividualBTCChart"
     >
-      <h1
-        className="MuiTypography-root MuiTypography-h1 css-1yswwri-MuiTypography-root-IndividualBTCChart"
+      <div
+        className="MuiBox-root css-5dj179-IndividualBTCChart"
       >
-        BTC/USD
-      </h1>
+        <h1
+          className="MuiTypography-root MuiTypography-h1 css-1yswwri-MuiTypography-root-IndividualBTCChart"
+        >
+          BTC/USD
+        </h1>
+        <h3
+          className="MuiTypography-root MuiTypography-h3 css-bfisej-MuiTypography-root-IndividualBTCChart"
+        >
+          *Drag and zoom in on the chart and tap to see each data point
+        </h3>
+      </div>
       <div
         id="TimePeriodButton"
         period={90}
