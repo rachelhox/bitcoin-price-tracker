@@ -7,6 +7,9 @@ const useStyles = () => {
       margin: 'auto',
       [theme.breakpoints.up('laptop')]: {
         width: '70%',
+        '& .VictoryContainer': {
+          height: '80vh!important' as any,
+        },
       },
     }),
   };

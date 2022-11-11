@@ -17,7 +17,15 @@ const useStyles = () => {
     }),
     maxWidth: css({
       width: '100%',
-      [theme.breakpoints.up('tablet')]: { maxWidth: '1200px', width: '80%' },
+      paddingBottom: theme.spacing(4),
+      [theme.breakpoints.up('tablet')]: {
+        maxWidth: '1200px',
+        width: '80%',
+        paddingBottom: 0,
+      },
+      [theme.breakpoints.up('laptop')]: {
+        paddingBottom: theme.spacing(4),
+      },
     }),
     container: css({
       display: 'flex',
@@ -29,13 +37,14 @@ const useStyles = () => {
         flexDirection: 'row',
       },
     }),
-    h1: css({
-      fontSize: theme.spacing(3),
-      color: theme.palette.primary.main,
-      padding: theme.spacing(0, 0, 2, 0),
+    h3: css({
+      fontSize: theme.spacing(1.5),
+      color: theme.palette.custom.gray,
+      width: '100%',
+      textAlign: 'left',
       [theme.breakpoints.up('laptop')]: {
-        fontSize: theme.spacing(6),
-        padding: 0,
+        padding: theme.spacing(0, 0, 2, 0),
+        fontSize: theme.spacing(2),
       },
     }),
   };

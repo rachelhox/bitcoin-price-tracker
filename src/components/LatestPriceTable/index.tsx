@@ -13,8 +13,8 @@ const LatestPriceTable = () => {
     <Box css={styles.root}>
       <Box css={styles.maxWidth}>
         <Box css={styles.container}>
-          <Typography variant="h1" css={styles.h1}>
-            BTC exchange rates
+          <Typography variant="h3" css={styles.h3}>
+            *BTC exchange rates update every 1 minute
           </Typography>
         </Box>
         <PriceRow priceTableData={priceTableData} />
