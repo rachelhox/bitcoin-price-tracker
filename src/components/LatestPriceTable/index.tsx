@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import { Box, Typography } from '@mui/material';
-import { TimePeriodButton } from '@components';
 import useStyles from './useStyles';
 import { PriceRow } from './components';
 import { usePriceTableHook } from './hooks';

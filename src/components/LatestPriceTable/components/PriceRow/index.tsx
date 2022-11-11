@@ -13,7 +13,7 @@ const PriceRow = ({ priceTableData }: PriceRowProp) => {
   return (
     <>
       {priceTableData.map((price) => (
-        <Box css={styles.row}>
+        <Box css={styles.row} key={price.key}>
           <Typography variant="h6" css={styles.h6}>
             BTC/{price.key.toUpperCase()}
           </Typography>

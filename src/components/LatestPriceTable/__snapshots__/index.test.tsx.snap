@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component: LatestPriceTable matches snapshot 1`] = `
+<div
+  className="MuiBox-root css-1bg7lxm-LatestPriceTable"
+>
+  <div
+    className="MuiBox-root css-1ov9l26-LatestPriceTable"
+  >
+    <div
+      className="MuiBox-root css-adzkba-LatestPriceTable"
+    >
+      <h3
+        className="MuiTypography-root MuiTypography-h3 css-8ipx91-MuiTypography-root-LatestPriceTable"
+      >
+        *BTC exchange rates update every 1 minute
+      </h3>
+    </div>
+    <div
+      id="PriceRow"
+      priceTableData={[]}
+    />
+  </div>
+</div>
+`;
