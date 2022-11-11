@@ -65,6 +65,7 @@ All data is real time, updated every 1 minute.
 
 - [React](https://reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org/)
 - [Material UI v5](https://mui.com/)
 - [Victory Chart](https://formidable.com/open-source/victory/)
 - [Jest](https://jestjs.io/docs/getting-started)
