@@ -55,6 +55,10 @@ Displaying the latest Bitcoin prices for all 13 currencies
 
 Once you zoom in on the chart, then switch to a different time period or a different currency, please drag and zoom out the chart again so you can view the whole chart with an updated x/y axis.
 
+UI/UX decision:
+Common design pattern observed in crypto exchange apps has been taken into consideration during development.
+Also, the custom palette has adopted bitcoin's theme color.
+
 All data is real time, updated every 1 minute.
 
 ### Main tech stacks
