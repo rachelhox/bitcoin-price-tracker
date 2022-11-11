@@ -23,7 +23,7 @@ A candle stick chart displaying Bitcoin's OHLC (open, high, low, close) prices c
 
 ### Feature
 
-**Drag and zoom** function available for users to zoom in on the chart and inspect each data point by hovering over the candle stick.
+**Drag and zoom** function available for users to scroll and zoom in on the chart, inspecting each data point by hovering over the candle stick.
 
 <p align="center">
 <img src="https://media.giphy.com/media/9EYCxE7mu94RYmIN2P/giphy.gif" width="550" />
@@ -41,7 +41,7 @@ A line chart displaying Bitcoin's average prices corresponding to the **selected
 
 ### Feature
 
-**Drag and zoom** function available for users to zoom in on the chart and inspect each data point by hovering over the line.
+**Drag and zoom** function available for users to scroll and zoom in on the chart, inspecting each data point by hovering over the line.
 
 <p align="center">
 <img src="https://media.giphy.com/media/kymn8ohMCsPsAtRfOc/giphy.gif" width="550" />
