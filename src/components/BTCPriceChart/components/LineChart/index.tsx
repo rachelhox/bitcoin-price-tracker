@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Box, useTheme } from '@mui/material';
+import { Box, useTheme, useMediaQuery } from '@mui/material';
 import {
   VictoryChart,
   VictoryAxis,
@@ -24,6 +24,7 @@ const LineChart = ({ lineChartData }: LineChartProp) => {
   const styles = useStyles();
   const theme = useTheme();
   const { currency } = useGeneralContext();
+  const onlyLargeScreen = useMediaQuery(theme.breakpoints.up('laptop'));
   return (
     <NoSSR>
       <Box css={styles.root}>
@@ -54,6 +55,7 @@ const LineChart = ({ lineChartData }: LineChartProp) => {
                   }}
                 />
               }
+              allowZoom={!!onlyLargeScreen}
             />
           }
         >
