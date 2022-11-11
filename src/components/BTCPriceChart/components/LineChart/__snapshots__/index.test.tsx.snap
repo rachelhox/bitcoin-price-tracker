@@ -30,7 +30,6 @@ exports[`component: LineChart matches snapshot 1`] = `
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
-        onWheel={[Function]}
         role="img"
         style={
           {
